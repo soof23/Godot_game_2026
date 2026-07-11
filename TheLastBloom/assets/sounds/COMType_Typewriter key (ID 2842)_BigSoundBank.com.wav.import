@@ -1,0 +1,24 @@
+[remap]
+
+importer="wav"
+type="AudioStreamWAV"
+uid="uid://v1h0fggugvk5"
+path="res://.godot/imported/COMType_Typewriter key (ID 2842)_BigSoundBank.com.wav-e1991f40fc34e25afbed8b5e26988e2f.sample"
+
+[deps]
+
+source_file="res://assets/sounds/COMType_Typewriter key (ID 2842)_BigSoundBank.com.wav"
+dest_files=["res://.godot/imported/COMType_Typewriter key (ID 2842)_BigSoundBank.com.wav-e1991f40fc34e25afbed8b5e26988e2f.sample"]
+
+[params]
+
+force/8_bit=false
+force/mono=false
+force/max_rate=false
+force/max_rate_hz=44100
+edit/trim=false
+edit/normalize=false
+edit/loop_mode=0
+edit/loop_begin=0
+edit/loop_end=-1
+compress/mode=2
