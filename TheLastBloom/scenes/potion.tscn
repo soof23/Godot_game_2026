@@ -1,0 +1,122 @@
+[gd_scene format=3 uid="uid://bh27kuum5o47x"]
+
+[ext_resource type="FontFile" uid="uid://dk052qt73do3p" path="res://assets/images/UI/JMH Typewriter.otf" id="1_6gods"]
+[ext_resource type="Texture2D" uid="uid://blwu0m31wc3fp" path="res://assets/images/UI/emptypotion.png" id="2_1bakm"]
+[ext_resource type="Shader" uid="uid://188jwm3qmmb8" path="res://scripts/potion.gdshader" id="2_t7n2o"]
+[ext_resource type="Texture2D" uid="uid://c7o5o8ebr5658" path="res://assets/images/UI/potionred01.png" id="3_t7n2o"]
+[ext_resource type="Texture2D" uid="uid://jcedx7c82shf" path="res://assets/images/UI/potionred02.png" id="4_ok4dw"]
+[ext_resource type="Texture2D" uid="uid://cjyf8dk8bu5xq" path="res://assets/images/UI/potionred03.png" id="5_vimwg"]
+[ext_resource type="Texture2D" uid="uid://bw7hfm0jqucwf" path="res://assets/images/UI/potionred04.png" id="6_yxgu6"]
+[ext_resource type="Texture2D" uid="uid://cgtx6v2cn6t6m" path="res://assets/images/UI/potionred05.png" id="7_qted3"]
+[ext_resource type="Texture2D" uid="uid://bahlbfc0nbkn6" path="res://assets/images/witch/circle_05_a.png" id="9_ok4dw"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_vimwg"]
+shader = ExtResource("2_t7n2o")
+shader_parameter/fill_amount = 0.0
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ancum"]
+atlas = ExtResource("2_1bakm")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yp1kk"]
+atlas = ExtResource("3_t7n2o")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8dbo2"]
+atlas = ExtResource("4_ok4dw")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_a6teu"]
+atlas = ExtResource("5_vimwg")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gmx3n"]
+atlas = ExtResource("6_yxgu6")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qkra3"]
+atlas = ExtResource("7_qted3")
+region = Rect2(0, 0, 1024, 1024)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_6p5he"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ancum")
+}],
+"loop": true,
+"name": &"0",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yp1kk")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8dbo2")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_a6teu")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gmx3n")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qkra3")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}]
+
+[node name="potion" type="Control" unique_id=1529512137]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=798628496]
+layout_mode = 0
+offset_left = 45.0
+offset_top = -16.0
+offset_right = 85.0
+offset_bottom = 25.0
+theme_override_fonts/font = ExtResource("1_6gods")
+theme_override_font_sizes/font_size = 32
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=1836711927]
+light_mask = 4
+material = SubResource("ShaderMaterial_vimwg")
+scale = Vector2(0.06, 0.06)
+sprite_frames = SubResource("SpriteFrames_6p5he")
+animation = &"5"
+autoplay = "0"
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=986706756]
+scale = Vector2(0.15, 0.15)
+color = Color(0.9310657, 0, 0.11656188, 1)
+energy = 1.5
+range_layer_min = 10
+range_layer_max = 10
+range_item_cull_mask = 4
+texture = ExtResource("9_ok4dw")

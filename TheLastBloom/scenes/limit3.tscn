@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://bw6tybvnms3ev"]
+
+[ext_resource type="Texture2D" uid="uid://bjdjo7qwslbc4" path="res://assets/images/tilemap/ground_8.png" id="1_t2vk4"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_fstd7"]
+size = Vector2(20, 113)
+
+[node name="limitt" type="StaticBody2D" unique_id=1740680500]
+collision_layer = 64
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=522752821]
+position = Vector2(0, -26)
+scale = Vector2(1, 5)
+texture = ExtResource("1_t2vk4")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1301753775]
+position = Vector2(0, -46.5)
+shape = SubResource("RectangleShape2D_fstd7")
+disabled = true

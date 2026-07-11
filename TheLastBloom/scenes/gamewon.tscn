@@ -1,0 +1,537 @@
+[gd_scene format=3 uid="uid://dja0b2dbodrtm"]
+
+[ext_resource type="Script" uid="uid://b8f7pf8medtt7" path="res://scripts/gamewon.gd" id="1_r4aey"]
+[ext_resource type="Texture2D" uid="uid://kik4mylh5emc" path="res://assets/images/Background/level3-4/1pink.png" id="2_j65ae"]
+[ext_resource type="Texture2D" uid="uid://71iql65iihfm" path="res://assets/images/Background/level3-4/2pink.png" id="3_bmuwc"]
+[ext_resource type="FontFile" uid="uid://dk052qt73do3p" path="res://assets/images/UI/JMH Typewriter.otf" id="3_j2wql"]
+[ext_resource type="FontFile" uid="uid://cq7agqmbuadp1" path="res://assets/images/UI/JMH Typewriter-Bold.otf" id="4_7lu52"]
+[ext_resource type="Texture2D" uid="uid://mkfjegsvwwvb" path="res://assets/images/Background/level3-4/3pink.png" id="4_fvicn"]
+[ext_resource type="Texture2D" uid="uid://dext075jbxdw8" path="res://assets/images/UI/shinie.png" id="5_asgfx"]
+[ext_resource type="Texture2D" uid="uid://c0xl8aij2gpb5" path="res://assets/images/Background/level3-4/4pink.png" id="5_huayu"]
+[ext_resource type="Texture2D" uid="uid://b01d6ts7ajwj3" path="res://assets/images/Background/level3-4/5pink.png" id="6_4c6x6"]
+[ext_resource type="AudioStream" uid="uid://dhq3he2c6fj6j" path="res://assets/sounds/magic-chime-02.mp3" id="7_8n8vy"]
+[ext_resource type="Texture2D" uid="uid://p87p3vni5n44" path="res://assets/images/Background/pine2.png" id="7_epbh3"]
+[ext_resource type="Texture2D" uid="uid://krl17ia1lo1e" path="res://assets/images/Background/pine1.png" id="8_r08og"]
+[ext_resource type="Texture2D" uid="uid://cwr1w1uji3c5d" path="res://assets/images/Background/win/fir_tree_1.png" id="9_hyqqo"]
+[ext_resource type="Texture2D" uid="uid://dncs762vkus5f" path="res://assets/images/Background/win/fir_tree_2.png" id="10_slp37"]
+[ext_resource type="Texture2D" uid="uid://yix5ywbyyl7q" path="res://assets/images/Background/win/fir_tree_3.png" id="11_vu4ap"]
+[ext_resource type="Texture2D" uid="uid://cgx3dhydktguk" path="res://assets/images/Background/win/fir_tree_4.png" id="12_iwitu"]
+[ext_resource type="Texture2D" uid="uid://dh85aufkgk72k" path="res://assets/images/Background/win/fir_tree_5.png" id="13_18pvu"]
+[ext_resource type="PackedScene" uid="uid://61djdm8pkbp1" path="res://scenes/flowerWin.tscn" id="14_j65ae"]
+[ext_resource type="Texture2D" uid="uid://uu33fjn7uc8s" path="res://assets/images/Background/win/middle_lane_tree2.png" id="14_qh68k"]
+[ext_resource type="Texture2D" uid="uid://dgtib26s4qvel" path="res://assets/images/Background/win/middle_lane_tree3.png" id="15_357l6"]
+[ext_resource type="Texture2D" uid="uid://c5xegc5fypuk0" path="res://assets/images/Background/win/middle_lane_tree4.png" id="16_v7cb8"]
+[ext_resource type="Texture2D" uid="uid://btkp23fu6lt5i" path="res://assets/images/Background/win/middle_lane_tree5.png" id="17_2hy01"]
+[ext_resource type="Texture2D" uid="uid://c462c72d84c4n" path="res://assets/images/Background/win/Objects.png" id="18_lxs13"]
+[ext_resource type="Texture2D" uid="uid://bknnd4lybdesy" path="res://assets/images/Background/win/28.png" id="19_qh68k"]
+[ext_resource type="Texture2D" uid="uid://d0s3y3qowevcs" path="res://assets/images/Background/win/30.png" id="20_357l6"]
+[ext_resource type="Texture2D" uid="uid://g7m2r1xn6neo" path="res://assets/images/Background/win/31.png" id="21_v7cb8"]
+[ext_resource type="Texture2D" uid="uid://dv2ujf5358t8p" path="res://assets/images/Background/win/45.png" id="22_2hy01"]
+[ext_resource type="Texture2D" uid="uid://kxk6ob14kaax" path="res://assets/images/Background/win/bush_2.png" id="23_lxs13"]
+[ext_resource type="Texture2D" uid="uid://dsxh4goo04omr" path="res://assets/images/Background/win/bush_1.png" id="24_357l6"]
+[ext_resource type="Texture2D" uid="uid://b8mdrs1ei1okb" path="res://assets/images/Background/win/Orange_mushrooms1_grass_shadow.png" id="25_v7cb8"]
+[ext_resource type="Script" uid="uid://cc5m4lqlp5022" path="res://scripts/mousemain.gd" id="29_2hy01"]
+[ext_resource type="PackedScene" uid="uid://dr3yhwmh8o8p0" path="res://scenes/music.tscn" id="32_2hy01"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_gwoe8"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_asgfx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_nfal0"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_8n8vy"]
+
+[sub_resource type="CanvasItemMaterial" id="CanvasItemMaterial_j65ae"]
+blend_mode = 1
+light_mode = 1
+
+[sub_resource type="Gradient" id="Gradient_bmuwc"]
+colors = PackedColorArray(0.827451, 0.6862745, 0.21568628, 1, 0.827451, 0.6862745, 0.21568628, 0)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_aj0wn"]
+gradient = SubResource("Gradient_bmuwc")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_fvicn"]
+particle_flag_disable_z = true
+emission_shape = 3
+emission_box_extents = Vector3(900, 600, 1)
+direction = Vector3(1, 1, 0)
+spread = 180.0
+initial_velocity_max = 200.0
+orbit_velocity_min = 0.020000096
+orbit_velocity_max = 0.020000096
+gravity = Vector3(0, -5, 0)
+damping_max = 100.00001
+scale_min = 0.0
+scale_max = 3.0
+color = Color(0.827451, 0.6862745, 0.21568628, 1)
+color_ramp = SubResource("GradientTexture1D_aj0wn")
+
+[sub_resource type="Gradient" id="Gradient_nfal0"]
+colors = PackedColorArray(0.8901961, 0.8784314, 0.27058825, 1, 0.5254902, 0.3882353, 0.09803922, 0.03529412)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_huayu"]
+gradient = SubResource("Gradient_nfal0")
+
+[sub_resource type="Curve" id="Curve_8n8vy"]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_2egik"]
+curve = SubResource("Curve_8n8vy")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_j2wql"]
+particle_flag_disable_z = true
+direction = Vector3(1, 1, 0)
+spread = 180.0
+initial_velocity_max = 200.0
+gravity = Vector3(0, -5, 0)
+damping_max = 100.00001
+scale_curve = SubResource("CurveTexture_2egik")
+color = Color(0.8901961, 0.8784314, 0.27058825, 1)
+color_ramp = SubResource("GradientTexture1D_huayu")
+
+[sub_resource type="Gradient" id="Gradient_asgfx"]
+offsets = PackedFloat32Array(0, 0.15326633, 0.29396984, 0.44974875, 0.60552764, 0.74120605, 0.8366834, 0.9522613, 1)
+colors = PackedColorArray(0.57100636, 0.6999278, 0.3658705, 1, 0.5314971, 0.7363383, 0.77483505, 1, 0.7795406, 0.51625055, 0.8154272, 1, 0.9709541, 0.69459957, 0.45914602, 1, 0.88189924, 0.8710547, 0.25405475, 1, 0.7447727, 0.429939, 0.32484898, 0.8, 0.7799105, 0.39339042, 0.43240982, 0.8, 0.6721957, 0.2510102, 0.80561453, 0.516923, 0.4763775, 0.34604913, 0.7607076, 0.4)
+
+[sub_resource type="GradientTexture1D" id="GradientTexture1D_qpdwg"]
+gradient = SubResource("Gradient_asgfx")
+
+[sub_resource type="Curve" id="Curve_nfal0"]
+_limits = [0.0, 1.3, 0.0, 1.0]
+_data = [Vector2(0, 0), 0.0, 0.0, 0, 0, Vector2(0.5, 1.3), 0.0, 0.0, 0, 0, Vector2(1, 0), 0.0, 0.0, 0, 0]
+point_count = 3
+
+[sub_resource type="CurveTexture" id="CurveTexture_qpdwg"]
+curve = SubResource("Curve_nfal0")
+
+[sub_resource type="ParticleProcessMaterial" id="ParticleProcessMaterial_8n8vy"]
+particle_flag_disable_z = true
+spread = 90.0
+initial_velocity_max = 10.0
+gravity = Vector3(0, -5, 0)
+scale_curve = SubResource("CurveTexture_qpdwg")
+color_ramp = SubResource("GradientTexture1D_qpdwg")
+
+[node name="GameWon" type="Control" unique_id=320984375]
+layout_mode = 3
+anchors_preset = 0
+offset_left = 639.0
+offset_top = 360.0
+offset_right = 679.0
+offset_bottom = 400.0
+script = ExtResource("1_r4aey")
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=1730206074]
+
+[node name="ParallaxBackground" type="ParallaxBackground" parent="." unique_id=1848146390]
+
+[node name="ParallaxLayer" type="ParallaxLayer" parent="ParallaxBackground" unique_id=952353662]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer" unique_id=2014956155]
+position = Vector2(641.49994, 361.50003)
+scale = Vector2(2.230903, 2.2314818)
+texture = ExtResource("2_j65ae")
+
+[node name="ParallaxLayer2" type="ParallaxLayer" parent="ParallaxBackground" unique_id=248652661]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer2" unique_id=2015492597]
+position = Vector2(646, 364)
+scale = Vector2(2.230903, 2.2314818)
+texture = ExtResource("3_bmuwc")
+
+[node name="ParallaxLayer3" type="ParallaxLayer" parent="ParallaxBackground" unique_id=634420947]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer3" unique_id=1433956244]
+position = Vector2(641.49994, 361.50003)
+scale = Vector2(2.230903, 2.2314818)
+texture = ExtResource("4_fvicn")
+
+[node name="ParallaxLayer15" type="ParallaxLayer" parent="ParallaxBackground" unique_id=281421474]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer15" unique_id=2138156716]
+position = Vector2(641.49994, 361.50003)
+scale = Vector2(2.230903, 2.2314818)
+texture = ExtResource("5_huayu")
+
+[node name="ParallaxLayer16" type="ParallaxLayer" parent="ParallaxBackground" unique_id=815611131]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer16" unique_id=1486487062]
+position = Vector2(641.49994, 361.50003)
+scale = Vector2(2.230903, 2.2314818)
+texture = ExtResource("6_4c6x6")
+
+[node name="ParallaxLayer4" type="ParallaxLayer" parent="ParallaxBackground" unique_id=816124879]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer4" unique_id=1405574456]
+position = Vector2(640.00006, 571.00006)
+scale = Vector2(1.8720928, 2.6180906)
+texture = ExtResource("7_epbh3")
+
+[node name="ParallaxLayer5" type="ParallaxLayer" parent="ParallaxBackground" unique_id=974556388]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer5" unique_id=116597832]
+position = Vector2(640, 610)
+scale = Vector2(1.8720928, 2.6180906)
+texture = ExtResource("8_r08og")
+
+[node name="trees" type="ParallaxLayer" parent="ParallaxBackground" unique_id=150936754]
+
+[node name="Sprite2D11" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1529687523]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(57, 586)
+texture = ExtResource("16_v7cb8")
+
+[node name="Sprite2D12" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1394016544]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(399, 591)
+texture = ExtResource("16_v7cb8")
+
+[node name="Sprite2D13" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1404589038]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(602, 601)
+texture = ExtResource("11_vu4ap")
+
+[node name="Sprite2D14" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=620402412]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(947, 599)
+texture = ExtResource("11_vu4ap")
+
+[node name="Sprite2D15" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1337385898]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(205, 597)
+texture = ExtResource("11_vu4ap")
+
+[node name="Sprite2D8" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=693527347]
+modulate = Color(1, 1, 1, 0.5)
+position = Vector2(1027, 590)
+texture = ExtResource("16_v7cb8")
+
+[node name="Sprite2D9" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1575790955]
+modulate = Color(1, 1, 1, 0.8)
+position = Vector2(35, 601)
+texture = ExtResource("17_2hy01")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1130429098]
+modulate = Color(1, 1, 1, 0.8)
+position = Vector2(64, 592)
+texture = ExtResource("10_slp37")
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1359331023]
+position = Vector2(111, 638)
+texture = ExtResource("9_hyqqo")
+
+[node name="Sprite2D10" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1809917882]
+position = Vector2(262, 591)
+texture = ExtResource("18_lxs13")
+region_enabled = true
+region_rect = Rect2(255, 0, 176, 273)
+
+[node name="Sprite2D16" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1130957445]
+position = Vector2(762, 593)
+texture = ExtResource("18_lxs13")
+region_enabled = true
+region_rect = Rect2(255, 0, 176, 273)
+
+[node name="Sprite2D6" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1270724035]
+position = Vector2(350, 586)
+texture = ExtResource("14_qh68k")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1187243277]
+modulate = Color(1, 1, 1, 0.8)
+position = Vector2(904, 599)
+texture = ExtResource("11_vu4ap")
+
+[node name="Sprite2D5" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1279259061]
+modulate = Color(1, 1, 1, 0.90000004)
+position = Vector2(953.00006, 663)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("13_18pvu")
+
+[node name="Sprite2D17" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=276922678]
+position = Vector2(512, 663)
+scale = Vector2(1.5, 1.5)
+texture = ExtResource("13_18pvu")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1496830494]
+position = Vector2(1157, 594)
+texture = ExtResource("12_iwitu")
+
+[node name="Sprite2D7" type="Sprite2D" parent="ParallaxBackground/trees" unique_id=1463625486]
+position = Vector2(1249, 606)
+texture = ExtResource("15_357l6")
+
+[node name="ParallaxLayer6" type="ParallaxLayer" parent="ParallaxBackground" unique_id=1934368960]
+
+[node name="Sprite2D" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1642258787]
+position = Vector2(20, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("19_qh68k")
+
+[node name="Sprite2D16" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=166822007]
+position = Vector2(800, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("19_qh68k")
+
+[node name="Sprite2D2" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=117600954]
+position = Vector2(100, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("20_357l6")
+
+[node name="Sprite2D17" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1827781769]
+position = Vector2(1060, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("20_357l6")
+
+[node name="Sprite2D3" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1106190421]
+position = Vector2(210, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("21_v7cb8")
+
+[node name="Sprite2D4" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1116367612]
+position = Vector2(220, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("21_v7cb8")
+
+[node name="Sprite2D18" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=445596412]
+position = Vector2(940, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("21_v7cb8")
+
+[node name="Sprite2D5" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1611931608]
+position = Vector2(450, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("22_2hy01")
+
+[node name="Sprite2D7" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1876492023]
+position = Vector2(470, 705)
+texture = ExtResource("23_lxs13")
+
+[node name="Sprite2D12" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=406357177]
+position = Vector2(1100, 705)
+texture = ExtResource("23_lxs13")
+
+[node name="Sprite2D13" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=386510700]
+position = Vector2(1110, 705)
+texture = ExtResource("23_lxs13")
+
+[node name="Sprite2D14" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1546253312]
+position = Vector2(1005, 705)
+texture = ExtResource("23_lxs13")
+
+[node name="Sprite2D10" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1232867430]
+position = Vector2(850, 705)
+texture = ExtResource("23_lxs13")
+
+[node name="Sprite2D8" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1022362197]
+position = Vector2(150, 705)
+texture = ExtResource("23_lxs13")
+
+[node name="Sprite2D9" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=679961964]
+position = Vector2(170, 710)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("24_357l6")
+
+[node name="Sprite2D15" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1805414647]
+position = Vector2(1270, 710)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("24_357l6")
+
+[node name="Sprite2D11" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1131065745]
+position = Vector2(824, 704)
+scale = Vector2(1.2, 1.2)
+texture = ExtResource("24_357l6")
+
+[node name="Sprite2D6" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=963830251]
+position = Vector2(900, 710)
+scale = Vector2(0.05, 0.05)
+texture = ExtResource("22_2hy01")
+flip_h = true
+
+[node name="Sprite2D19" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=167324902]
+position = Vector2(1143, 715)
+scale = Vector2(0.7, 0.7)
+texture = ExtResource("25_v7cb8")
+flip_h = true
+
+[node name="Sprite2D20" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1204097049]
+position = Vector2(1180, 712)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("18_lxs13")
+flip_h = true
+region_enabled = true
+region_rect = Rect2(1122, 151, 29, 44)
+
+[node name="Sprite2D22" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1740766027]
+position = Vector2(1190, 712)
+scale = Vector2(0.5, 0.5)
+texture = ExtResource("18_lxs13")
+region_enabled = true
+region_rect = Rect2(1122, 151, 29, 44)
+
+[node name="Sprite2D23" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=1966166258]
+position = Vector2(550, 709)
+scale = Vector2(0.6, 0.6)
+texture = ExtResource("18_lxs13")
+region_enabled = true
+region_rect = Rect2(1122, 151, 29, 44)
+
+[node name="Sprite2D21" type="Sprite2D" parent="ParallaxBackground/ParallaxLayer6" unique_id=661043749]
+position = Vector2(380, 713)
+texture = ExtResource("25_v7cb8")
+flip_h = true
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=364076886]
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer" unique_id=2039045921]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -248.0
+offset_top = -54.0
+offset_right = 248.0
+offset_bottom = 54.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/separation = 35
+
+[node name="Label" type="Label" parent="CanvasLayer/VBoxContainer" unique_id=584998002]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.87390655, 0.90351903, 0.962248, 1)
+theme_override_colors/font_outline_color = Color(0.15642482, 1.7453414e-05, 0.15642345, 1)
+theme_override_constants/outline_size = 5
+theme_override_fonts/font = ExtResource("4_7lu52")
+theme_override_font_sizes/font_size = 64
+text = "You won!"
+horizontal_alignment = 1
+
+[node name="VBoxContainer" type="VBoxContainer" parent="CanvasLayer/VBoxContainer" unique_id=1069222394]
+layout_mode = 2
+theme_override_constants/separation = 20
+
+[node name="Stats" type="Label" parent="CanvasLayer/VBoxContainer/VBoxContainer" unique_id=1555408335]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.87390655, 0.90351903, 0.962248, 1)
+theme_override_colors/font_outline_color = Color(0.15642482, 1.7453414e-05, 0.15642345, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("4_7lu52")
+theme_override_font_sizes/font_size = 40
+text = "Stats"
+horizontal_alignment = 1
+
+[node name="Time" type="Label" parent="CanvasLayer/VBoxContainer/VBoxContainer" unique_id=106969434]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.87390655, 0.90351903, 0.962248, 1)
+theme_override_colors/font_outline_color = Color(0.15642482, 1.7453414e-05, 0.15642345, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_j2wql")
+theme_override_font_sizes/font_size = 32
+
+[node name="Damages" type="Label" parent="CanvasLayer/VBoxContainer/VBoxContainer" unique_id=1154851512]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.87390655, 0.90351903, 0.962248, 1)
+theme_override_colors/font_outline_color = Color(0.15642482, 1.7453414e-05, 0.15642345, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_j2wql")
+theme_override_font_sizes/font_size = 32
+
+[node name="Crystals" type="Label" parent="CanvasLayer/VBoxContainer/VBoxContainer" unique_id=137822323]
+layout_mode = 2
+theme_override_colors/font_color = Color(0.87390655, 0.90351903, 0.962248, 1)
+theme_override_colors/font_outline_color = Color(0.15642482, 1.7453414e-05, 0.15642345, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("3_j2wql")
+theme_override_font_sizes/font_size = 32
+
+[node name="Button" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=543219695]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.87390655, 0.90351903, 0.962248, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.68235296, 0.25882354, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0.58431375, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9019608, 0.68235296, 0.25882354, 1)
+theme_override_colors/font_outline_color = Color(0.15642482, 1.7453414e-05, 0.15642345, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("4_7lu52")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gwoe8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_asgfx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nfal0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8n8vy")
+text = "Play again"
+
+[node name="Button2" type="Button" parent="CanvasLayer/VBoxContainer" unique_id=1418774427]
+layout_mode = 2
+theme_type_variation = &"FlatButton"
+theme_override_colors/font_color = Color(0.87390655, 0.90351903, 0.962248, 1)
+theme_override_colors/font_pressed_color = Color(0.9019608, 0.68235296, 0.25882354, 1)
+theme_override_colors/font_hover_color = Color(0.9490196, 0.9490196, 0.58431375, 1)
+theme_override_colors/font_hover_pressed_color = Color(0.9019608, 0.68235296, 0.25882354, 1)
+theme_override_colors/font_outline_color = Color(0.15642482, 1.7453414e-05, 0.15642345, 1)
+theme_override_constants/outline_size = 4
+theme_override_fonts/font = ExtResource("4_7lu52")
+theme_override_font_sizes/font_size = 32
+theme_override_styles/normal = SubResource("StyleBoxEmpty_gwoe8")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_asgfx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_nfal0")
+theme_override_styles/disabled = SubResource("StyleBoxEmpty_8n8vy")
+text = "Quit"
+
+[node name="Fade" type="ColorRect" parent="CanvasLayer" unique_id=640392429]
+visible = false
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+color = Color(0, 0, 0, 1)
+
+[node name="Gold" type="GPUParticles2D" parent="CanvasLayer" unique_id=1192010108]
+z_index = 10
+material = SubResource("CanvasItemMaterial_j65ae")
+position = Vector2(641, 361)
+amount = 15000
+lifetime = 5.0
+preprocess = 5.0
+randomness = 0.3
+fixed_fps = 0
+visibility_rect = Rect2(-1000, -1000, 2000, 2000)
+process_material = SubResource("ParticleProcessMaterial_fvicn")
+
+[node name="click" type="GPUParticles2D" parent="." unique_id=252357714]
+z_index = 10
+position = Vector2(641, 361)
+emitting = false
+amount = 200
+texture = ExtResource("5_asgfx")
+one_shot = true
+explosiveness = 1.0
+process_material = SubResource("ParticleProcessMaterial_j2wql")
+
+[node name="mousewin" type="GPUParticles2D" parent="." unique_id=1917665283]
+z_index = 10
+amount = 1000
+texture = ExtResource("5_asgfx")
+lifetime = 2.0
+explosiveness = 0.5
+randomness = 0.38
+fixed_fps = 60
+process_material = SubResource("ParticleProcessMaterial_8n8vy")
+script = ExtResource("29_2hy01")
+
+[node name="clickSound" type="AudioStreamPlayer2D" parent="." unique_id=2005567316]
+stream = ExtResource("7_8n8vy")
+bus = &"SFX"
+
+[node name="flower" parent="." unique_id=994125663 instance=ExtResource("14_j65ae")]
+position = Vector2(20, 335)
+scale = Vector2(0.3, 0.3)
+
+[node name="Music" parent="." unique_id=2078790620 instance=ExtResource("32_2hy01")]
+
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="CanvasLayer/VBoxContainer/Button2" to="." method="_on_button_2_pressed"]

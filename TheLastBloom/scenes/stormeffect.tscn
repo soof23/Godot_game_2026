@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://nwi0oqj7710q"]
+
+[ext_resource type="Script" uid="uid://du520wbu2ixls" path="res://scripts/stormeffect.gd" id="1_64gv3"]
+
+[node name="storm" type="Node2D" unique_id=675743803]
+script = ExtResource("1_64gv3")
+
+[node name="stormeffect" type="ColorRect" parent="." unique_id=2028432234]
+offset_right = 3000.0
+offset_bottom = 3000.0
+color = Color(0.66668326, 0.7021107, 0.6262097, 1)

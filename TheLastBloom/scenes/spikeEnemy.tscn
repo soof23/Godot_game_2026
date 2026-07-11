@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://dide27gnf4fpv"]
+
+[ext_resource type="Script" uid="uid://bghidtcs2u5pw" path="res://scripts/spikeenemy.gd" id="1_t7hnu"]
+[ext_resource type="Texture2D" uid="uid://besc0pj0kxq1i" path="res://assets/images/enemies/Spikes.png" id="2_eopcl"]
+
+[node name="spikeEnemy" type="Area2D" unique_id=1256263981]
+collision_layer = 128
+script = ExtResource("1_t7hnu")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1165613914]
+scale = Vector2(3, 3)
+texture = ExtResource("2_eopcl")
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="." unique_id=330469287]
+position = Vector2(-23, 23)
+polygon = PackedVector2Array(0, 0, 9, -19, 17, -6, 26, -5, 33, -19, 43, 0)
+
+[connection signal="body_entered" from="." to="." method="_on_body_entered"]

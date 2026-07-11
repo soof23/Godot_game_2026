@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://5g18w3ehlj56"]
+
+[ext_resource type="Texture2D" uid="uid://cqslai8auubcs" path="res://assets/images/tilemap/Άτιτλο-removebg-preview.png" id="1_4p7p7"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_4p7p7"]
+size = Vector2(225, 89)
+
+[node name="AnimatableBody2D" type="AnimatableBody2D" unique_id=708060921]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=1633809488]
+rotation = 0.0052359877
+texture = ExtResource("1_4p7p7")
+region_enabled = true
+region_rect = Rect2(94, 251, 229, 96)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1036053903]
+position = Vector2(-0.5, 0.5)
+shape = SubResource("RectangleShape2D_4p7p7")

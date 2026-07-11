@@ -1,0 +1,106 @@
+[gd_scene format=3 uid="uid://c2sbnja268we7"]
+
+[ext_resource type="FontFile" uid="uid://dk052qt73do3p" path="res://assets/images/UI/JMH Typewriter.otf" id="1_ycbwg"]
+[ext_resource type="Texture2D" uid="uid://bl3cnc7x0e2wg" path="res://assets/images/UI/HeartSpriteSheet.png" id="2_ycbwg"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_krgnv"]
+atlas = ExtResource("2_ycbwg")
+region = Rect2(0, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_txm48"]
+atlas = ExtResource("2_ycbwg")
+region = Rect2(16, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_8nnyc"]
+atlas = ExtResource("2_ycbwg")
+region = Rect2(32, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_4mtg8"]
+atlas = ExtResource("2_ycbwg")
+region = Rect2(48, 0, 16, 16)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_u10h0"]
+atlas = ExtResource("2_ycbwg")
+region = Rect2(64, 0, 16, 16)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oquu7"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_krgnv")
+}],
+"loop": true,
+"name": &"1",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_txm48")
+}],
+"loop": true,
+"name": &"2",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_8nnyc")
+}],
+"loop": true,
+"name": &"3",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_4mtg8")
+}],
+"loop": true,
+"name": &"4",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_u10h0")
+}],
+"loop": true,
+"name": &"5",
+"speed": 5.0
+}]
+
+[sub_resource type="Gradient" id="Gradient_ycbwg"]
+offsets = PackedFloat32Array(0.068306014, 0.62568307)
+colors = PackedColorArray(1, 1, 1, 1, 0, 0, 0, 1)
+
+[sub_resource type="GradientTexture2D" id="GradientTexture2D_krgnv"]
+gradient = SubResource("Gradient_ycbwg")
+fill = 1
+fill_from = Vector2(0.5, 0.5)
+
+[node name="heart" type="Control" unique_id=1529512137]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="Label" type="Label" parent="." unique_id=798628496]
+layout_mode = 0
+offset_left = 43.0
+offset_top = -20.0
+offset_right = 83.0
+offset_bottom = 21.0
+theme_override_fonts/font = ExtResource("1_ycbwg")
+theme_override_font_sizes/font_size = 32
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=94880554]
+light_mask = 2
+scale = Vector2(2.5, 2.5)
+sprite_frames = SubResource("SpriteFrames_oquu7")
+animation = &"5"
+autoplay = "5"
+
+[node name="PointLight2D" type="PointLight2D" parent="." unique_id=1650539960]
+color = Color(0.8513364, 0, 0.14386502, 1)
+energy = 5.0
+range_layer_min = 10
+range_layer_max = 10
+range_item_cull_mask = 2
+texture = SubResource("GradientTexture2D_krgnv")

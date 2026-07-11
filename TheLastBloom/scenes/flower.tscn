@@ -1,0 +1,251 @@
+[gd_scene format=3 uid="uid://b4y0gqtod4512"]
+
+[ext_resource type="Texture2D" uid="uid://b5f83qeqle8wo" path="res://assets/images/flower/1.png" id="1_fq5kt"]
+[ext_resource type="Shader" uid="uid://cstnmjccknbka" path="res://scripts/flower.gdshader" id="1_qcm7n"]
+[ext_resource type="Texture2D" uid="uid://bnsqcxb5wo7vg" path="res://assets/images/flower/2.png" id="2_qcm7n"]
+[ext_resource type="Texture2D" uid="uid://ccgihkfgkw1e7" path="res://assets/images/flower/3.png" id="3_75crh"]
+[ext_resource type="Texture2D" uid="uid://8v5raxewb1xm" path="res://assets/images/flower/4.png" id="4_qc6mi"]
+[ext_resource type="Texture2D" uid="uid://bjuvcwmn5jxrc" path="res://assets/images/flower/5.png" id="5_bwda1"]
+[ext_resource type="Texture2D" uid="uid://b13p8iaddbj2g" path="res://assets/images/flower/6.png" id="6_sgss6"]
+[ext_resource type="Texture2D" uid="uid://dglgr8suyi6ks" path="res://assets/images/flower/7.png" id="7_6or65"]
+[ext_resource type="Texture2D" uid="uid://bqe76snpuvs86" path="res://assets/images/flower/8.png" id="8_ra85c"]
+[ext_resource type="Texture2D" uid="uid://db4275wl8jctb" path="res://assets/images/flower/9.png" id="9_5gf0c"]
+[ext_resource type="Texture2D" uid="uid://kvmufib8gx11" path="res://assets/images/flower/10.png" id="10_mqmli"]
+[ext_resource type="Texture2D" uid="uid://bkls4hv65r5wh" path="res://assets/images/flower/11.png" id="11_src4t"]
+[ext_resource type="Texture2D" uid="uid://bkjp0lt2vqvkf" path="res://assets/images/flower/12.png" id="12_sd1i7"]
+[ext_resource type="Texture2D" uid="uid://bfj0pe3gmxcyl" path="res://assets/images/flower/13.png" id="13_vc6dg"]
+[ext_resource type="Texture2D" uid="uid://dcjiqwdtnyhyy" path="res://assets/images/flower/14.png" id="14_l37m6"]
+[ext_resource type="Texture2D" uid="uid://cpgo5laxnilmb" path="res://assets/images/flower/15.png" id="15_e3ik0"]
+[ext_resource type="Texture2D" uid="uid://dcpokqc7fs0ys" path="res://assets/images/flower/16.png" id="16_q03dq"]
+[ext_resource type="Texture2D" uid="uid://uwfvpdxvooh6" path="res://assets/images/flower/17.png" id="17_cwuos"]
+[ext_resource type="Texture2D" uid="uid://733m3mqvyx7c" path="res://assets/images/flower/18.png" id="18_fi8kt"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_75crh"]
+shader = ExtResource("1_qcm7n")
+shader_parameter/pulse_speed = 1.5000000712500001
+shader_parameter/pulse_intensity = 0.030000001425
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_fq5kt"]
+atlas = ExtResource("1_fq5kt")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_b885x"]
+atlas = ExtResource("1_fq5kt")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_3repy"]
+atlas = ExtResource("2_qcm7n")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ltlic"]
+atlas = ExtResource("3_75crh")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jeimy"]
+atlas = ExtResource("4_qc6mi")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_pbyo6"]
+atlas = ExtResource("5_bwda1")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_kvxp1"]
+atlas = ExtResource("6_sgss6")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ocqdd"]
+atlas = ExtResource("7_6or65")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_7hshb"]
+atlas = ExtResource("8_ra85c")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_jg0dr"]
+atlas = ExtResource("9_5gf0c")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0sa0s"]
+atlas = ExtResource("10_mqmli")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_aq8x4"]
+atlas = ExtResource("11_src4t")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_j5iqw"]
+atlas = ExtResource("12_sd1i7")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_yxp6w"]
+atlas = ExtResource("13_vc6dg")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_cei00"]
+atlas = ExtResource("14_l37m6")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_0cdvt"]
+atlas = ExtResource("15_e3ik0")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_2bicb"]
+atlas = ExtResource("16_q03dq")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sxwqy"]
+atlas = ExtResource("17_cwuos")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_xsdj2"]
+atlas = ExtResource("18_fi8kt")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qcm7n"]
+atlas = ExtResource("10_mqmli")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_75crh"]
+atlas = ExtResource("11_src4t")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_qc6mi"]
+atlas = ExtResource("12_sd1i7")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_bwda1"]
+atlas = ExtResource("13_vc6dg")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_sgss6"]
+atlas = ExtResource("14_l37m6")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_6or65"]
+atlas = ExtResource("15_e3ik0")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ra85c"]
+atlas = ExtResource("16_q03dq")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_5gf0c"]
+atlas = ExtResource("17_cwuos")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_mqmli"]
+atlas = ExtResource("18_fi8kt")
+region = Rect2(0, 0, 505, 434)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_os1pk"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_fq5kt")
+}],
+"loop": true,
+"name": &"before",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_b885x")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_3repy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ltlic")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jeimy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_pbyo6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_kvxp1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ocqdd")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_7hshb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_jg0dr")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0sa0s")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_aq8x4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_j5iqw")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_yxp6w")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_cei00")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_0cdvt")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_2bicb")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sxwqy")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_xsdj2")
+}],
+"loop": false,
+"name": &"bloom",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qcm7n")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_75crh")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_qc6mi")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_bwda1")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_sgss6")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_6or65")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ra85c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_5gf0c")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_mqmli")
+}],
+"loop": true,
+"name": &"win",
+"speed": 5.0
+}]
+
+[node name="flower" type="Node2D" unique_id=994125663]
+z_index = 12
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="." unique_id=707421485]
+material = SubResource("ShaderMaterial_75crh")
+sprite_frames = SubResource("SpriteFrames_os1pk")
+animation = &"bloom"
+autoplay = "before"
+frame = 17
+frame_progress = 1.0
